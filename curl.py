@@ -1,7 +1,7 @@
 import os
 import urllib2
 
-def downloader(url,fname,proxy="",increment=200)
+def downloader(url,fname,proxy="",increment=200) :
     data = urllib2.urlopen(url)
     size= data.headers["Content-Length"]
     start = 0
